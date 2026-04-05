@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="General.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
+    </style>
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="picture-container">
+        <img class="product-picture mobile-img" src="images/image-product-mobile.jpg" />
+        <img class="product-picture desktop-img" src="images/image-product-desktop.jpg" />
+      </div>
+      <div class="product-info">
+        <div class="product-type">PERFUME</div>
+        <div class="product-title">Gabrielle Essence Eau De Parfum</div>
+        <div class="product-description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </div>
+        <div class="prices">
+          <div class="discounted-price">$149.99</div>
+          <div class="original-price">$169.99</div>
+        </div>
+
+        <div>
+          <button>
+            <img class="cart-icon" src="images/icon-cart.svg" />
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Bright Kwame Addaney</a>.
+    </div>
+  </body>
+</html>
