@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   width: auto;
+  padding: 1rem;
   
 }
 
@@ -14,6 +15,7 @@
   height: 100%;
   border-top-left-radius: 0.65rem;
   border-top-right-radius: 0.65rem;
+  padding-bottom: 0.7rem;
 }
 
 .product-info {
@@ -119,46 +121,56 @@ button {
     border-top-left-radius: 0.65rem;
     border-top-right-radius: 0.65rem;
     padding: 0;
-    margin: 0
+    margin: 0;
+  
     
   }
   
+  .picture-container{
+    margin: 0;
+    padding: 0;
+  }
 
   .product-info-container {
     display: flex;
     flex-direction: column;
     width: 22rem;
-    height: 31rem;
     background-color: hsl(0, 0%, 100%);
-   
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
     
   }
 
   .product-type {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     letter-spacing: 0.35rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 500;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     padding-bottom: 1rem;
     color: hsl(228, 12%, 48%);
   }
 
   .product-title {
     font-family: "Fraunces", sans-serif;
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 700;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
     color: hsl(212, 21%, 14%);
+    width: 15rem;
+    line-height: 1;
+   
   }
   .product-description {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-weight: 500;
-    padding-top: 0.5rem;
+    padding-top: 1.2rem;
     color: hsl(228, 12%, 48%);
-    line-height: 1.7;
-    width: 20rem;
+    line-height: 1.8;
+    width: 16rem;
+    font-size: 16px;
   }
   .prices {
     display: flex;
@@ -167,34 +179,38 @@ button {
   }
   .discounted-price {
     font-family: "Fraunces", sans-serif;
-    font-size: 35px;
+    font-size: 40px;
     color: hsl(158, 36%, 37%);
     font-weight: 700;
+    padding-bottom: 0.5rem;
   }
 
   .original-price {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    padding-top: 0.5rem;
-    padding-left: 1rem;
-    font-size: 14.5px;
+    padding-top: 0.8rem;
+    padding-left: 1.2rem;
+    font-size: 15px;
     text-decoration: line-through;
     text-decoration-color: hsl(228, 12%, 48%);
+    display: flex;
+    
   }
 
   button {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     background-color: hsl(158, 36%, 37%);
-    width: 19rem;
+    width: 17.3rem;
     height: 3.5rem;
-    font-size: 15px;
-    border-radius: 0.5rem;
+    font-size: 17px;
+    border-radius: 0.6rem;
     border: none;
     color: hsl(0, 0%, 100%);
   }
 
   .cart-icon {
-    height: 15px;
-    margin-right: 0.5rem;
+    height: 18px;
+    margin-right: 0.3rem;
+    font-weight: 800;
   }
 }
