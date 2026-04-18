@@ -7,7 +7,6 @@
   justify-content: center;
   width: auto;
   padding: 1rem;
-  
 }
 
 .product-picture {
@@ -113,7 +112,6 @@ button {
   .mobile-img {
     display: none;
   }
- 
 
   .product-picture {
     width: 100%;
@@ -122,11 +120,9 @@ button {
     border-top-right-radius: 0.65rem;
     padding: 0;
     margin: 0;
-  
-    
   }
-  
-  .picture-container{
+
+  .picture-container {
     margin: 0;
     padding: 0;
   }
@@ -138,8 +134,6 @@ button {
     background-color: hsl(0, 0%, 100%);
     margin-bottom: 0;
     padding-bottom: 0;
-    
-    
   }
 
   .product-type {
@@ -161,7 +155,6 @@ button {
     color: hsl(212, 21%, 14%);
     width: 15rem;
     line-height: 1;
-   
   }
   .product-description {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
@@ -193,7 +186,6 @@ button {
     text-decoration: line-through;
     text-decoration-color: hsl(228, 12%, 48%);
     display: flex;
-    
   }
 
   button {
