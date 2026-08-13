@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-purple-50: hsl(260, 100%, 95%);
+  --color-purple-300: hsl(264, 82%, 80%);
+  --color-purple-500: hsl(263, 55%, 52%);
+  --color-gray-100: hsl(214, 17%, 92%);
+  --color-gray-200: hsl(0, 0%, 81%);
+  --color-gray-400: hsl(224, 10%, 45%);
+  --color-gray-500: hsl(217, 19%, 35%);
+  --color-dark-blue: hsl(219, 29%, 14%);
+  --color-gray-300: hsl(0, 0%, 87%);
+  --color-white: hsl(0, 0%, 100%);
+  --shadow-right: 12px 8px 24px hsl(217, 19%, 35%);
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  padding-bottom: 2rem;
+}
