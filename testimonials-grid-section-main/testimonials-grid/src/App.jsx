@@ -8,8 +8,9 @@ import imageKira from "../images/image-kira.jpg";
 
 function App() {
   return (
+
     <main className=" min-h-screen flex items-center justify-center">
-      <div className="grid grid-cols-1 px-4 justify-items-center">
+      <div className="grid grid-cols-1 p-5 justify-items-center lg:grid-cols-4 lg:gap-10 7" >
         <DarkCard
           image={imageDaniel}
           title="Verified Graduate"
@@ -24,6 +25,7 @@ function App() {
                                   the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”"
           textColor="text-purple-200"
           highlightColor="white"
+          gridPlacement="lg:col-start-1 lg:col-span-2"
         />
         <DarkCard
           image={imageJonathan}
@@ -38,6 +40,7 @@ function App() {
                              in myself. ” "
 
           highlightColor="white"
+          gridPlacement="lg:col-start-3 lg:row-start-1 "
         />
         <LightCard
           image={imageJeanette}
@@ -47,6 +50,7 @@ function App() {
           testimonial=" “ Thank you for the wonderful experience! I now have a
                             job I really enjoy, and make a good living while doing something I love. ”"
           textColor="text-gray-200"
+          gridPlacement="lg:col-start-1 lg:row-start-2 "
           
         />
 
@@ -66,6 +70,7 @@ function App() {
                             attention you need from an incredible community of smart and amazing people.
     ” "
           highlightColor="gray-200"
+          gridPlacement="lg:col-start-2 lg:col-span-2 lg:row-start-2"
     
         />
 
@@ -85,6 +90,7 @@ function App() {
                             example of my developent experience. It certainly helped me land a job as a
                             full-stack developer after receiving multiple offers. 100% recommend! ”"
           textColor="text-gray-200"
+          gridPlacement="lg:col-start-4 lg:row-span-2 lg:row-start-1"
         />
       </div>
     </main>

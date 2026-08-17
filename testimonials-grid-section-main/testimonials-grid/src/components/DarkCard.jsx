@@ -7,6 +7,7 @@ function DarkCard({
   color,
   textColor,
   highlightColor,
+  gridPlacement,
 }) {
   const colorMap = {
     "purple-500": "bg-purple-500",
@@ -16,9 +17,10 @@ function DarkCard({
 
   const bgColor = colorMap[color] || "bg-purple-500";
 
+  const shouldLimitWidth = !gridPlacement?.includes("col-span-2");
   return (
     <div
-      className={`${bgColor} p-9 w-full max-w-92 mx-auto rounded-lg mt-6 shadow-right`}
+      className={`${bgColor} p-9 w-full ${gridPlacement} ${shouldLimitWidth ? "max-w-92" : ""} mx-auto rounded-lg lg:mt-0 mt-6 shadow-right`}
     >
       <div></div>
       <div className="flex items-center flex-row gap-5">
@@ -33,7 +35,9 @@ function DarkCard({
         </div>
       </div>
 
-      <h2 className={`text-${highlightColor} text-2xl font-bold mt-5`}>{highlight}</h2>
+      <h2 className={`text-${highlightColor} text-2xl font-bold mt-5`}>
+        {highlight}
+      </h2>
       <p className={` ${textColor} mt-4`}>{testimonial}</p>
     </div>
   );

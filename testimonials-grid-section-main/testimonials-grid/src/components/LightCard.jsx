@@ -1,6 +1,10 @@
-function LightCard({ image, title, name, highlight, testimonial,  }) {
+function LightCard({ image, title, name, highlight, testimonial, gridPlacement }) {
+  const shouldLimitWidth = !gridPlacement?.includes('col-span-2');
+
   return (
-    <div className={`bg-color-white p-9 w-full max-w-92 mx-auto rounded-lg mt-6 shadow-right`}>
+    <div
+      className={`bg-color-white p-9 w-full ${gridPlacement} ${shouldLimitWidth ? "max-w-92" : ""} mx-auto rounded-lg lg:mt-0 mt-6 shadow-right`}
+    >
       <div></div>
       <div className="flex items-center flex-row gap-5">
         <img className="rounded-full w-10" src={image} alt="Profile Picture" />
